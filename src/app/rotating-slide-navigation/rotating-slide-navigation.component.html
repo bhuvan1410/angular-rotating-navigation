@@ -1,0 +1,8 @@
+<div class="container">
+    <div class="slider" [style.transform]="'rotateY(' + rotation + 'deg)'">
+      <div *ngFor="let slide of slides; let i = index" class="slide" [ngStyle]="getSlideStyle(i)">
+        {{ slide }}
+      </div>
+    </div>
+  </div>
+  
